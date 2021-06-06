@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "dagre": "^0.8.5",
+    "diagram-maker": "^1.2.0",
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.6"
+  },
+  "devDependencies": {
+    "vue-cli-plugin-webpack-bundle-analyzer": "~4.0.0"
+  }
+}
