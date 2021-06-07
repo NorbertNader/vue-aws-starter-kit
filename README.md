@@ -9,7 +9,7 @@ You also get a metrics lambda to log some basic metrics to Amazon CloudWatch.
 
 # Prerequisite
 
-Make sure ou are on node14+.
+Make sure you are on node14+.
 
 You can use `n` to switch the node version.
 
@@ -38,12 +38,6 @@ npm install -g @vue/cli-service-global && npm install -g @vue/compiler-sfc
 Read more here https://cli.vuejs.org/guide/prototyping.html
 
 # SSR
-
-To run as a server side rendered app switch to ssr branch.
-
-```bash
-git checkout ssr-app
-```
 
 To run the app in ssr mode you wil first need to build the bundles.
 
@@ -149,3 +143,4 @@ The same goes for the ssr lambda, so the api endpoint will change for your app.
 * Add HMR for SSR
 * Automate infra setup instead of having to follow presentation. Probably use CDK and create a note script like `npm run infra:create <accountId>`
 * Add typescript, linting and tests
+* Add CI/CD with CodeCommit, CodeDeploy, CodePipeline etc.
