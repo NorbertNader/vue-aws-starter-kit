@@ -1,6 +1,10 @@
-import { createWebHistory, createRouter } from 'vue-router';
+import { createWebHistory, createMemoryHistory, createRouter } from 'vue-router';
 // import Home from './Home.vue';
 // import About from './About.vue';
+
+const isServer = typeof window === 'undefined'
+
+const history = isServer ? createMemoryHistory() : createWebHistory()
 
 const routes = [
     {
@@ -25,7 +29,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history,
     routes,
 });
 

@@ -1,0 +1,48 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  SSR and Metrics functions
+
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  SSRFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: ssr-lambda.lambdaHandler
+      Runtime: nodejs14.x
+      Events:
+        SSR:
+          Type: HttpApi
+
+  MetricsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: metrics-lambda.lambdaHandler
+      Runtime: nodejs14.x
+      Policies:
+        - Statement:
+            - Sid: AllowLoggingMetrics
+              Effect: Allow
+              Action:
+                - cloudwatch:PutMetricData
+              Resource: '*'
+      Events:
+        SSR:
+          Type: Api
+          Properties:
+            Path: /log
+            Method: GET
+
+Outputs:
+  SSRApi:
+    Description: "API Gateway endpoint URL for Prod stage for SSR function"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com"
+  SSRFunction:
+    Description: "SSR Lambda Function ARN"
+    Value: !GetAtt SSRFunction.Arn
+  SSRFunctionIamRole:
+    Description: "Implicit IAM Role created for SSR function"
+    Value: !GetAtt SSRFunctionRole.Arn
