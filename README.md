@@ -1,6 +1,6 @@
 # AWS + Vue.js starter kit
 
-I created this project for a talk I did at the Geekle Vue.js global Summit.
+I created this project for a talk I did at the Geekle Vue.js global Summit. https://geekle.us/vue
 
 This is a starter kit to get a simple Vue.js app up and running and move it to the AWS Cloud.  
 It includes server side rendering, code split routes and lazy loading components.  
@@ -102,6 +102,8 @@ https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/s
 Set your global aws credentials which we will need for moving our app to the cloud.
 
 https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html
+
+**Going to make this presentation public after June 9th, 10am PDT**
 
 Follow the presentation here https://www.slideshare.net/NorbertNader/vue-presentation-249091110/NorbertNader/vue-presentation-249091110
 
