@@ -47,3 +47,23 @@ vue serve
 ```
 
 This will start a server at `http://localhost:8080`.
+
+# Hot Module Replcement
+
+Still work in progress, but should work.
+
+Just install webpack globally.
+
+```bash
+npm install -g webpack
+```
+
+and run 
+
+```bash
+webpack serve
+```
+
+This will start the app at `localhost:8080`
+
+You can now make changes to the app and you will see the changes without reloading the page.
