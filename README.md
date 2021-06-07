@@ -1,7 +1,6 @@
 # AWS + Vue.js starter kit
 
-I created this project for a talk I did at the Geekle Vue.js global Summit.  
-I will update the readme with a link to the presentation...
+I created this project for a talk I did at the Geekle Vue.js global Summit.
 
 This is a starter kit to get a simple Vue.js app up and running and move it to the AWS Cloud.  
 It includes server side rendering, code split routes and lazy loading components.  
@@ -141,3 +140,9 @@ One thing to keep in mind is that the metrics api endpoint is hard coded.
 You will need to update the endpoint if you update the sam lambda.
 
 The same goes for the ssr lambda, so the api endpoint will change for your app.
+
+## TODO
+
+* Add HMR for SSR
+* Automate infra setup instead of having to follow presentation. Probably use CDK and create a note script like `npm run infra:create <accountId>`
+* Add typescript, linting and tests
