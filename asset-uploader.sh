@@ -18,7 +18,7 @@ do
   case "$extension" in
     "css"|"js")
       aws s3api put-object \
-        --bucket vue-presentation-nnader \
+        --bucket <s3-bucket-name> \
         --key $extension/$filename \
         --body $f \
         --content-type $contenttype

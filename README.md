@@ -107,6 +107,7 @@ Follow the presentation here https://www.slideshare.net/NorbertNader/vue-present
 
 Once you have your infrastructure set up you will need to update the placeholders.
 
+* asset-uploader.sh - replace <s3-bucket-name> with the name of your s3 bucket.
 * logger.js - replace <metrics-lambda-id> with your metrics lambda id.
 * metrics-lambda.js - replace <ssr-lambda-id> with your metrics lambda id.
 * vue.config.js - replace <cloudfront-id> with your cloudfront id.
