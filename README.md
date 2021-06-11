@@ -2,6 +2,10 @@
 
 I created this project for a talk I did at the Geekle Vue.js global Summit. https://geekle.us/vue
 
+You can find the presentation here https://www.slideshare.net/NorbertNader/vue-presentation-249091110/NorbertNader/vue-presentation-249091110
+
+You can also vue the presentation on youtube https://youtu.be/SNOZNupl0GY?t=29288
+
 This is a starter kit to get a simple Vue.js app up and running and move it to the AWS Cloud.  
 It includes server side rendering, code split routes and lazy loading components.  
 The app will deploy as a Node.js Lambda.  
@@ -97,9 +101,10 @@ Set your global aws credentials which we will need for moving our app to the clo
 
 https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html
 
-**Going to make this presentation public after June 9th, 10am PDT**
+## Set up infra
+Follow the presentation to create your infra https://www.slideshare.net/NorbertNader/vue-presentation-249091110/NorbertNader/vue-presentation-249091110
 
-Follow the presentation here https://www.slideshare.net/NorbertNader/vue-presentation-249091110/NorbertNader/vue-presentation-249091110
+You can also watch the presentation here https://youtu.be/SNOZNupl0GY?t=29288
 
 Once you have your infrastructure set up you will need to update the placeholders.
 
